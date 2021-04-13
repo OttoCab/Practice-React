@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
+import Ejercicio1 from './components/Ejercicio1';
+import Ejercicio2 from './components/Ejercicio2';
+import Ejercicio3 from './components/Ejercicio3';
+import FormTareas from './components/4-Ejercicio/FormTareas';
+import FormColores from './components/5-Ejercicio/FormColores';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      {/* <Ejercicio1/> */}
+      {/* <Ejercicio2 text='my friend'/> */}
+      {/* <Ejercicio3 text='my friend'/> */}
+      {/* <FormTareas/> */}
+      <FormColores></FormColores>
+    </Fragment>
   );
 }
 
