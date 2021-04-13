@@ -90,7 +90,7 @@ const FormColores = () => {
           </div>
         </div>
       </section>
-      <section className="container shadow rounded w-75">
+      <section className="container rounded w-75">
         {/* armo grilla de cards */}
         <ListaColor arrayColores={colores} borrarColor={borrarColor} />
       </section>
