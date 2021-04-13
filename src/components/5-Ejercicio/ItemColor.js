@@ -1,13 +1,13 @@
 import React from "react";
 
-const square = {
-  marginLeft: "5%",
-  width: "70px",
-  height: "70px",
-  border: "3px solid black",
-  background:
-    "linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red)",
-};
+// const square = {
+//   marginLeft: "5%",
+//   width: "70px",
+//   height: "70px",
+//   border: "3px solid black",
+//   background:
+//     "linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red)",
+// };
 
 const ItemColor = (props) => {
   return (
@@ -26,9 +26,9 @@ const ItemColor = (props) => {
               backgroundColor: props.colorInd,
             }}
           ></div>
-          <div className="d-flex justify-content-end pt-3">
+          <div className="text-end my-2">
             <button
-              className="btn btn-primary shadow w-50"
+              className="btn btn-primary shadow"
               onClick={() => props.borrarColor(props.colorI)}
             >
               Delete

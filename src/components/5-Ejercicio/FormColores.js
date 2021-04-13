@@ -31,7 +31,7 @@ const FormColores = () => {
   // BORRAR ITEMCOLOR
   const borrarColor = (colorI) => {
     console.log('funcion borrar');
-    setColores(colores.filter((dato, i) => i != colorI));
+    setColores(colores.filter((dato, i) => i !== colorI));
   }
 
 
@@ -63,7 +63,6 @@ const FormColores = () => {
             {/* cuadrado de colores */}
             <div
               style={{
-                marginLeft: "5%",
                 width: "70px",
                 height: "70px",
                 border: "3px solid black",
@@ -81,8 +80,8 @@ const FormColores = () => {
                   value={colorInd}
                 />
               </div>
-              <div className="d-flex justify-content-end">
-                <button className="btn btn-primary w-25 mb-3" type="submit">
+              <div className="text-end pb-3">
+                <button className="btn btn-primary" type="submit">
                   Guardar
                 </button>
               </div>
